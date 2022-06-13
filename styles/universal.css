@@ -1,0 +1,97 @@
+/* DO NOT CHANGE ANYTHING */
+/* This formatting is for all pages */
+
+/* Imports Shadows Into Light font at 400 weight  */
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap");
+
+/* Sets universal CSS variables */
+:root {
+  /* Black */
+  --black: #000;
+  /* White  */
+  --white: hsl(0, 0%, 100%);
+  /* Silver */
+  --silver: hsl(210, 0%, 92%);
+  /* Logo link */
+  --logo-link: url(../images/kl-logo.png);
+  /* Button background */
+  --red-button: url(../images/red-btn.png);
+}
+
+/* Makes every element into a box that includes margins and padding */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* UTILITY CLASSES */
+
+/* Gives elements relative position */
+.rel {
+  position: relative;
+}
+
+/* Makes a flex row */
+.flexr {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Makes a flex column */
+.flexc {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Makes flex elements centered */
+.fcenter {
+  justify-content: center;
+  align-items: center;
+}
+
+/* Makes a grid container */
+.grid-container {
+  display: grid;
+}
+
+/* GENERAL PAGE FORMATTING */
+
+/* Effects all elements */
+html {
+  font-family: sans-serif;
+  font-size: 12px;
+  scroll-behavior: smooth;
+}
+
+/* Effects body elements */
+body {
+  position: relative;
+}
+
+/* RESPONSIVE CSS */
+
+/* Changes settings at 768px screen size to 1023px screen size*/
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Changes the rem base */
+  html {
+    font-size: 15px;
+  }
+}
+
+/* Changes settings at 1024px to 1500px screen size */
+@media only screen and (min-width: 1024px) and (max-width: 1500px) {
+  /* Changes the rem base */
+  html {
+    font-size: 20px;
+  }
+}
+
+/* Changes settings at 1501px screen size */
+@media only screen and (min-width: 1501px) {
+  /* Changes the rem base */
+  html {
+    font-size: 25px;
+  }
+}

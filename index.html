@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- displays site properly based on user's device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Imports the CSS for the page -->
+    <link rel="stylesheet" href="styles/universal.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+
+    <!-- Imports FontAwesome icon library -->
+    <script
+      src="https://kit.fontawesome.com/5d5f7bf628.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Imports the Javascript for the page -->
+    <script defer src="scripts/index.js"></script>
+
+    <!-- Icon and Title: Shows up in browser tab -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/kl-logo.png" />
+    <title>Kaitlyn Lilith</title>
+  </head>
+  <body>
+    <!-- Makes an invisible box around everything -->
+    <div id="everythingbox" class="rel flexc fcenter">
+      <div id="insulation" class="rel grid-container">
+        <header id="hero" class="rel">
+          <img src="images/kl-logo.png" alt="" id="logo-ball" />
+          <h1 id="my-name">Kaitlyn Lilith</h1>
+          <h2 id="designs">Web Designs</h2>
+          <h2 id="html">HTML</h2>
+          <h2 id="css">CSS</h2>
+          <h2 id="js">JavaScript</h2>
+          <nav id="see-more-box" class="rel flexr fcenter">
+            <div id="see-more-btn" class="rel">
+              <div id="see-more-text">See More</div>
+            </div>
+          </nav>
+          <p id="css-animations">*animations made using CSS @keyframes</p>
+        </header>
+        <main id="main" class="rel">
+          <nav id="page-nav" class="rel flexc">
+            <div id="red-line-top" class="rel red-line"></div>
+            <ul id="nav-links" class="rel flexr">
+              <li class="nav-li rel">
+                <a href="#hero" id="home-link" class="rel nav-page-link">
+                  Home</a
+                >
+              </li>
+              <li class="nav-li rel">
+                <a href="#about" id="about-link" class="rel nav-page-link"
+                  >About</a
+                >
+              </li>
+              <li class="nav-li rel">
+                <a
+                  href="#portfolio"
+                  id="portfolio-link"
+                  class="rel nav-page-link"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="nav-li rel">
+                <a href="#contact" id="contact-link" class="rel nav-page-link"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+            <div id="red-line-bottom" class="rel red-line"></div>
+          </nav>
+          <section id="about" class="rel section">
+            <i class="fa-solid fa-gauge-simple-high"></i>
+            <i class="fa-solid fa-mobile-button"></i>
+
+            <i class="fa-solid fa-lightbulb"></i>
+            <i class="fa-solid fa-users"></i>
+            <i class="fa-solid fa-rocket"></i>
+            <i class="fa-solid fa-jet-fighter-up"></i>
+          </section>
+          <section id="portfolio" class="rel section"></section>
+          <section id="contact" class="rel section"></section>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
