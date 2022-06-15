@@ -12,6 +12,7 @@
 /* Formats the box holding everything */
 #everythingbox {
   width: 100vw;
+  font-family: "Source Code Pro", monospace;
 }
 
 #insulation {
@@ -371,6 +372,10 @@
 }
 
 /* About section */
+.section-header {
+  text-align: center;
+  font-size: 2.5rem;
+}
 
 #about {
   grid-area: about;
@@ -480,6 +485,7 @@
 }
 
 #info-text-link {
+  color: red;
 }
 
 #skills-box {
@@ -554,7 +560,7 @@
   grid-template-areas: "heading" "svaldi" "faqs-accordian" "time-tracker" "interactive-rating" "intro-component" "ping-coming-soon" "bankist" "mapty";
   justify-content: center;
   align-items: center;
-  background: url(../images/concrete.jpg) repeat center;
+  background: url(../images/concrete.png) repeat center;
   background-color: black;
   text-align: center;
 }
@@ -630,6 +636,143 @@
 /* Contact section */
 
 #contact {
+  padding: 2rem;
+}
+
+#contact-header {
+  margin-bottom: 1rem;
+}
+
+#contact-text {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+#contact-form {
+}
+
+#input-box {
+  display: flex;
+  flex-direction: column;
+}
+
+#form-left {
+}
+
+#form-right {
+}
+
+.input {
+  margin: 1rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 1.5rem;
+  border: 0.2rem solid black;
+}
+
+.input::placeholder {
+  font-family: "Source Code Pro", monospace;
+  color: var(--black);
+  font-size: 1rem;
+}
+
+#contact-name {
+}
+
+#contact-email {
+}
+
+#contact-btn-box {
+  width: 10rem;
+  height: 4rem;
+  align-self: center;
+  background-image: var(--red-button);
+  background-size: cover;
+  cursor: pointer;
+}
+
+#contact-btn {
+  width: 10rem;
+  height: 4rem;
+  border: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  background: transparent;
+}
+
+#send {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--white);
+}
+
+/* Footer section */
+#footer {
+  background-image: var(--index-header);
+  background-color: var(--black);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#footer-to-top {
+  margin: 1rem;
+}
+
+#button-to-top {
+  width: 4rem;
+  height: 4rem;
+  background-image: url(../images/square-button.png);
+  background-position: center;
+  background-size: cover;
+}
+
+#to-top {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#footer-icons {
+}
+
+.footer-icon-link {
+  margin: 1rem;
+}
+
+.footer-icon-box {
+}
+
+.footer-icon {
+  font-size: 2rem;
+  color: var(--white);
+}
+
+#github-link {
+}
+
+#github-box {
+}
+
+#github {
+}
+
+#linked-in-link {
+}
+
+#linked-in-box {
+}
+
+#linked-in {
+}
+
+#copyright {
+  margin: 1rem;
+  color: var(--white);
 }
 
 /* RESPONSIVE CSS */
@@ -698,6 +841,10 @@
     max-width: 30vw;
     max-height: 70vh;
   }
+
+  #input-box {
+    flex-direction: row;
+  }
 }
 
 /* Changes settings at 1024px to 1500px screen size */
@@ -763,6 +910,14 @@
   .project-img {
     max-width: 30vw;
     max-height: 70vh;
+  }
+
+  #input-box {
+    flex-direction: row;
+  }
+
+  .input {
+    width: 20rem;
   }
 }
 
@@ -832,5 +987,13 @@
   .project-img {
     max-width: 30vw;
     max-height: 70vh;
+  }
+
+  #input-box {
+    flex-direction: row;
+  }
+
+  .input {
+    width: 20rem;
   }
 }

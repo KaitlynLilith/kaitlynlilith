@@ -33,11 +33,11 @@
           <h2 id="html">HTML</h2>
           <h2 id="css">CSS</h2>
           <h2 id="js">JavaScript</h2>
-          <nav id="see-more-box" class="rel flexr fcenter">
+          <a href="#about" id="see-more-box" class="rel flexr fcenter">
             <div id="see-more-btn" class="rel">
               <div id="see-more-text">See More</div>
             </div>
-          </nav>
+          </a>
           <p id="css-animations">*animations made using CSS @keyframes</p>
         </header>
         <main id="main" class="rel grid-container">
@@ -354,6 +354,7 @@
                 <p class="project-text rel">
                   Project from 'The Complete JavaScript Course 2022' on Udemy.
                 </p>
+                <p class="yellow">user: jd pin: 2222</p>
               </div>
             </a>
 
@@ -375,8 +376,91 @@
               </div>
             </a>
           </section>
-          <section id="contact" class="rel section"></section>
+          <section id="contact" class="rel section flexc">
+            <h3 id="contact-header" class="rel section-header">Contact</h3>
+            <p id="contact-text" class="rel">
+              Have a question or want to work together?
+            </p>
+            <form
+              action="https://formspree.io/f/xknyeeak"
+              method="POST"
+              id="contact-form"
+              class="rel flexc fcenter"
+            >
+              <div id="input-box" class="rel">
+                <div id="form-left" class="rel flexc">
+                  <input
+                    type="name"
+                    name="name"
+                    placeholder="Name"
+                    id="contact-name"
+                    class="rel input"
+                  />
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                    id="contact-email"
+                    class="rel input"
+                  />
+                </div>
+                <div id="form-right" class="rel flexc">
+                  <textarea
+                    name="message"
+                    placeholder="Message"
+                    rows="10"
+                    cols="30"
+                    id="contact-message"
+                    class="rel input"
+                  ></textarea>
+                </div>
+              </div>
+              <div id="contact-btn-box" class="rel">
+                <button type="submit" id="contact-btn">
+                  <div id="send">Send</div>
+                </button>
+              </div>
+            </form>
+          </section>
         </main>
+        <footer id="footer" class="rel flexc fcenter">
+          <a href="#hero" id="footer-to-top" class="rel">
+            <div id="button-to-top" class="rel">
+              <img
+                src="images/chevrons-up.png"
+                alt="Arrows to top"
+                id="to-top"
+                class="rel"
+              />
+            </div>
+          </a>
+          <div id="footer-icons" class="rel flexr">
+            <a
+              href="https://github.com/KaitlynLilith"
+              id="github-link"
+              class="rel footer-icon-link"
+            >
+              <div id="github-box" class="rel flexc fcenter footer-icon-box">
+                <div id="github" class="footer-icon rel">
+                  <i class="fa-brands fa-github"></i>
+                </div>
+              </div>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/angelakayefox/"
+              id="linked-in-link"
+              class="rel footer-icon-link"
+            >
+              <div id="linked-in-box" class="rel flexc fcenter footer-icon-box">
+                <div id="linked-in" class="footer-icon rel">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+          <small id="copyright" class="rel">&copy 2022 Kaitlyn Lilith</small>
+        </footer>
       </div>
     </div>
   </body>
