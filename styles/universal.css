@@ -17,6 +17,8 @@
   --logo-link: url(../images/kl-logo.png);
   /* Button background */
   --red-button: url(../images/red-btn.png);
+  /* Red ball */
+  --red-ball: url(../images/red-ball.png);
 }
 
 /* Makes every element into a box that includes margins and padding */

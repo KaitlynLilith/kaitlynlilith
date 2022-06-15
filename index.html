@@ -40,7 +40,7 @@
           </nav>
           <p id="css-animations">*animations made using CSS @keyframes</p>
         </header>
-        <main id="main" class="rel">
+        <main id="main" class="rel grid-container">
           <nav id="page-nav" class="rel flexc">
             <div id="red-line-top" class="rel red-line"></div>
             <ul id="nav-links" class="rel flexr">
@@ -70,16 +70,311 @@
             </ul>
             <div id="red-line-bottom" class="rel red-line"></div>
           </nav>
-          <section id="about" class="rel section">
-            <i class="fa-solid fa-gauge-simple-high"></i>
-            <i class="fa-solid fa-mobile-button"></i>
-
-            <i class="fa-solid fa-lightbulb"></i>
-            <i class="fa-solid fa-users"></i>
-            <i class="fa-solid fa-rocket"></i>
-            <i class="fa-solid fa-jet-fighter-up"></i>
+          <section id="about" class="rel section grid-container">
+            <h3 id="about-heading" class="rel section-heading">About</h3>
+            <div id="skill-icons-collection" class="rel flexr grid-container">
+              <div id="fast" class="rel flexc fcenter skill-icon-box">
+                <div class="skill-icon rel">
+                  <i class="fa-solid fa-gauge-simple-high icons"></i>
+                </div>
+                <h4 class="rel skill-heading">Fast</h4>
+                <p class="rel skill-text">Prioritizing fast load times</p>
+              </div>
+              <div id="responsive" class="rel flexc fcenter skill-icon-box">
+                <div class="skill-icon rel">
+                  <i class="fa-solid fa-mobile-button icons"></i>
+                </div>
+                <h4 class="rel skill-heading">Responsive</h4>
+                <p class="rel skill-text">Mobile-first designs</p>
+              </div>
+              <div id="intuitive" class="rel flexc skill-icon-box fcenter">
+                <div class="skill-icon rel">
+                  <i class="fa-solid fa-users icons"></i>
+                </div>
+                <h4 class="rel skill-heading">Intuitive</h4>
+                <p class="rel skill-text">Intuitive user designs</p>
+              </div>
+              <div id="dynamic" class="rel flexc skill-icon-box fcenter">
+                <div class="skill-icon rel">
+                  <i class="fa-solid fa-jet-fighter-up icons"></i>
+                </div>
+                <h4 class="rel skill-heading">Dynamic</h4>
+                <p class="rel skill-text">Webpages that come to life</p>
+              </div>
+            </div>
+            <div id="avatar-info-box" class="rel flexc">
+              <div id="avatar-box" class="rel flexc fcenter">
+                <img
+                  src="images/avatar.jpg"
+                  alt="Kaitlyn's picture"
+                  id="avatar"
+                />
+              </div>
+              <div id="info-box" class="rel flexc">
+                <h4 id="info-box-heading" class="rel">Hi! I'm Katie!</h4>
+                <p id="info-box-text-1" class="rel">
+                  I'm a Front-End Web Developer in Southern Wisconsin. I have a
+                  passion for all things code. I love designing beautiful,
+                  intuitive, dynamic user experiences.
+                </p>
+                <p id="info-box-text-2" class="rel">
+                  <a href="#contact" id="info-text-link" class="rel"
+                    >Let's make something special together!</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div id="skills-box" class="flexc rel">
+              <h2 id="skills-heading" class="rel">Experience</h2>
+              <figure id="skills-chart" class="rel flexc">
+                <div class="row-box rel flexr">
+                  <div class="row-heading-box rel">
+                    <p id="" class="row-heading rel">HTML5</p>
+                  </div>
+                  <div class="circle-box rel flexr">
+                    <i class="fa-solid fa-circle circle blue"></i>
+                    <i class="fa-solid fa-circle circle green"></i>
+                    <i class="fa-solid fa-circle circle yellow"></i>
+                    <i class="fa-solid fa-circle circle orange"></i>
+                    <i class="fa-solid fa-circle circle red op"></i>
+                  </div>
+                  <div class="level-box rel">
+                    <p class="level rel">Proficent</p>
+                  </div>
+                </div>
+                <div class="row-box rel flexr">
+                  <div class="row-heading-box rel">
+                    <p id="" class="row-heading rel">CSS3</p>
+                  </div>
+                  <div class="circle-box rel flexr">
+                    <i class="fa-solid fa-circle circle blue"></i>
+                    <i class="fa-solid fa-circle circle green"></i>
+                    <i class="fa-solid fa-circle circle yellow"></i>
+                    <i class="fa-solid fa-circle circle orange"></i>
+                    <i class="fa-solid fa-circle circle red op"></i>
+                  </div>
+                  <div class="level-box rel">
+                    <p class="level rel">Proficent</p>
+                  </div>
+                </div>
+                <div class="row-box rel flexr">
+                  <div class="row-heading-box rel">
+                    <p id="" class="row-heading rel">JavaScript</p>
+                  </div>
+                  <div class="circle-box rel flexr">
+                    <i class="fa-solid fa-circle circle blue"></i>
+                    <i class="fa-solid fa-circle circle green"></i>
+                    <i class="fa-solid fa-circle circle yellow"></i>
+                    <i class="fa-solid fa-circle circle orange op"></i>
+                    <i class="fa-solid fa-circle circle red op"></i>
+                  </div>
+                  <div class="level-box rel">
+                    <p class="level rel">Competent</p>
+                  </div>
+                </div>
+                <div class="row-box rel flexr">
+                  <div class="row-heading-box rel">
+                    <p id="" class="row-heading rel">UI/UX Design</p>
+                  </div>
+                  <div class="circle-box rel flexr">
+                    <i class="fa-solid fa-circle circle blue"></i>
+                    <i class="fa-solid fa-circle circle green"></i>
+                    <i class="fa-solid fa-circle circle yellow"></i>
+                    <i class="fa-solid fa-circle circle orange op"></i>
+                    <i class="fa-solid fa-circle circle red op"></i>
+                  </div>
+                  <div class="level-box rel">
+                    <p class="level rel">Competent</p>
+                  </div>
+                </div>
+                <div class="row-box rel flexr">
+                  <div class="row-heading-box rel">
+                    <p id="" class="row-heading rel">Graphic Design</p>
+                  </div>
+                  <div class="circle-box rel flexr">
+                    <i class="fa-solid fa-circle circle blue"></i>
+                    <i class="fa-solid fa-circle circle green"></i>
+                    <i class="fa-solid fa-circle circle yellow"></i>
+                    <i class="fa-solid fa-circle circle orange op"></i>
+                    <i class="fa-solid fa-circle circle red op"></i>
+                  </div>
+                  <div class="level-box rel">
+                    <p class="level rel">Competent</p>
+                  </div>
+                </div>
+                <div class="row-box rel flexr">
+                  <div class="row-heading-box rel">
+                    <p id="" class="row-heading rel">Java</p>
+                  </div>
+                  <div class="circle-box rel flexr">
+                    <i class="fa-solid fa-circle circle blue"></i>
+                    <i class="fa-solid fa-circle circle green"></i>
+                    <i class="fa-solid fa-circle circle yellow op"></i>
+                    <i class="fa-solid fa-circle circle orange op"></i>
+                    <i class="fa-solid fa-circle circle red op"></i>
+                  </div>
+                  <div class="level-box rel">
+                    <p class="level rel">Advanced Beginner</p>
+                  </div>
+                </div>
+                <div class="row-box rel flexr">
+                  <div class="row-heading-box rel">
+                    <p id="" class="row-heading rel">Python</p>
+                  </div>
+                  <div class="circle-box rel flexr">
+                    <i class="fa-solid fa-circle circle blue"></i>
+                    <i class="fa-solid fa-circle circle green"></i>
+                    <i class="fa-solid fa-circle circle yellow op"></i>
+                    <i class="fa-solid fa-circle circle orange op"></i>
+                    <i class="fa-solid fa-circle circle red op"></i>
+                  </div>
+                  <div class="level-box rel">
+                    <p class="level rel">Advanced Beginner</p>
+                  </div>
+                </div>
+              </figure>
+            </div>
           </section>
-          <section id="portfolio" class="rel section"></section>
+          <section id="portfolio" class="rel section grid-container">
+            <h2 id="portfolio-heading" class="rel">Projects</h2>
+
+            <a
+              href="https://kaitlynlilith.github.io/Svaldi/"
+              id="svaldi"
+              class="project-link rel"
+            >
+              <div class="project-card rel flexc">
+                <img
+                  src="images/svaldi-mockup.PNG"
+                  alt="Edward Svaldi Watches project"
+                  class="project-img rel"
+                />
+                <h4 class="project-heading rel">Edward Svaldi Watches</h4>
+                <p class="project-text rel">
+                  Utilizes databases to load pages and products dynamically.
+                </p>
+              </div>
+            </a>
+
+            <a
+              href="https://kaitlynlilith.github.io/frontendmentor/faq-accordion-card-main/"
+              id="faqs-accordian"
+              class="project-link rel"
+            >
+              <div class="project-card rel flexc">
+                <img
+                  src="images/faqs-accordian.PNG"
+                  alt="FAQ Accordian Card  project"
+                  class="project-img rel"
+                />
+                <h4 class="project-heading rel">FAQ Accordian Card</h4>
+                <p class="project-text rel">Challenge from FrontEndMentor.io</p>
+              </div>
+            </a>
+
+            <a
+              href="https://kaitlynlilith.github.io/frontendmentor/time-tracking-dashboard-main/"
+              id="time-tracker"
+              class="project-link rel"
+            >
+              <div class="project-card rel flexc">
+                <img
+                  src="images/time-tracker.PNG"
+                  alt="Time Tracking Dashboard project"
+                  class="project-img rel"
+                />
+                <h4 class="project-heading rel">Time Tracking Dashboard</h4>
+                <p class="project-text rel">Challenge from FrontEndMentor.io</p>
+              </div>
+            </a>
+
+            <a
+              href="https://kaitlynlilith.github.io/frontendmentor/interactive-rating-component-main/"
+              id="interactive-rating"
+              class="project-link rel"
+            >
+              <div class="project-card rel flexc">
+                <img
+                  src="images/interactive-rating.PNG"
+                  alt="Interactive Rating Component project"
+                  class="project-img rel"
+                />
+                <h4 class="project-heading rel">
+                  Interactive Rating Component
+                </h4>
+                <p class="project-text rel">Challenge from FrontEndMentor.io</p>
+              </div>
+            </a>
+
+            <a
+              href="https://kaitlynlilith.github.io/frontendmentor/intro-component-with-signup-form-master/"
+              id="intro-component"
+              class="project-link rel"
+            >
+              <div class="project-card rel flexc">
+                <img
+                  src="images/intro-component.PNG"
+                  alt=""
+                  class="project-img rel"
+                />
+                <h4 class="project-heading rel">
+                  Intro Component with Signup Form
+                </h4>
+                <p class="project-text rel">Challenge from FrontEndMentor.io</p>
+              </div>
+            </a>
+
+            <a
+              href="https://kaitlynlilith.github.io/frontendmentor/ping-coming-soon-page-master/"
+              id="ping-coming-soon"
+              class="project-link rel"
+            >
+              <div class="project-card rel flexc">
+                <img
+                  src="images/ping-coming-soon.PNG"
+                  alt=""
+                  class="project-img rel"
+                />
+                <h4 class="project-heading rel">Ping Coming Soon Page</h4>
+                <p class="project-text rel">Challenge from FrontEndMentor.io</p>
+              </div>
+            </a>
+            <a
+              href="https://kaitlynlilith.github.io/Udemy/complete-javascript-course-master/11-Arrays-Bankist/"
+              id="bankist"
+              class="project-link rel"
+            >
+              <div class="project-card rel flexc">
+                <img
+                  src="images/bankist.PNG"
+                  alt="Bankist Application project"
+                  class="project-img rel"
+                />
+                <h4 class="project-heading rel">Bankist App</h4>
+                <p class="project-text rel">
+                  Project from 'The Complete JavaScript Course 2022' on Udemy.
+                </p>
+              </div>
+            </a>
+
+            <a
+              href="https://kaitlynlilith.github.io/Udemy/complete-javascript-course-master/15-Mapty"
+              id="mapty"
+              class="project-link rel"
+            >
+              <div class="project-card rel flexc">
+                <img
+                  src="images/mapty.PNG"
+                  alt="Mapty Application project"
+                  class="project-img rel"
+                />
+                <h4 class="project-heading rel">Mapty App</h4>
+                <p class="project-text rel">
+                  Project from 'The Complete JavaScript Course 2022' on Udemy.
+                </p>
+              </div>
+            </a>
+          </section>
           <section id="contact" class="rel section"></section>
         </main>
       </div>

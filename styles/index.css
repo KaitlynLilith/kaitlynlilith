@@ -5,6 +5,8 @@
 :root {
   /* header background */
   --index-header: url(../images/carbon-fiber-header.jpg);
+  /* About background */
+  --about-bckgrd: url(../images/concrete.jpg);
 }
 
 /* Formats the box holding everything */
@@ -15,8 +17,8 @@
 #insulation {
   width: 100vw;
   grid-template-columns: 100%;
-  grid-template-rows: repeat(6, auto);
-  grid-template-areas: "hero" "footer";
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: "hero" "main" "footer";
 }
 
 #see-more-box {
@@ -82,7 +84,6 @@
   position: absolute;
   top: 2%;
   left: 2%;
-
   animation-name: move;
   animation-duration: 10s;
   animation-timing-function: linear;
@@ -111,7 +112,7 @@
   color: var(--white);
   text-align: center;
   position: absolute;
-  top: 15%;
+  top: 12.5%;
   animation-name: name-spinner;
   animation-timing-function: linear;
   animation-iteration-count: 1;
@@ -143,7 +144,7 @@
 #designs {
   width: 100%;
   font-family: "Shadows Into Light", cursive;
-  font-size: 5rem;
+  font-size: 4rem;
   color: var(--white);
   text-align: center;
   position: absolute;
@@ -297,9 +298,14 @@
 }
 
 #main {
+  grid-area: main;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas: "nav" "about" "portfolio" "contact";
 }
 
 #page-nav {
+  grid-area: nav;
   width: 100vw;
   background-color: silver;
 }
@@ -361,15 +367,267 @@
 }
 
 .section {
-  height: 100vh;
   width: 100vw;
 }
 
+/* About section */
+
 #about {
+  grid-area: about;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas:
+    "heading" "collection" "avatar"
+    "experience";
+  padding: 3rem 1rem;
 }
 
-#portfolio {
+#about-heading {
+  grid-area: heading;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
+
+#skill-icons-collection {
+  grid-area: collection;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "fast responsive" "intuitive dynamic";
+  gap: 1rem;
+  justify-content: space-between;
+  text-align: center;
+  padding: 2.5rem 0;
+}
+
+#fast {
+  grid-area: fast;
+}
+
+#responsive {
+  grid-area: responsive;
+}
+
+#intuitive {
+  grid-area: intuitive;
+}
+
+#dynamic {
+  grid-area: dynamic;
+}
+
+.skill-icon-box {
+}
+
+.skill-icon {
+  width: 6rem;
+  height: 6rem;
+  background-image: var(--red-ball);
+  background-size: 100% 100%;
+}
+
+.icons {
+  font-size: 3rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+}
+
+.skill-heading {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+
+.skill-text {
+}
+
+#avatar-info-box {
+  grid-area: avatar;
+  justify-content: center;
+  align-items: center;
+}
+
+#avatar-box {
+  margin: 0 auto 2rem auto;
+}
+
+#avatar {
+  max-width: 60vw;
+  max-height: 60vh;
+  border-radius: 50%;
+  width: auto;
+  height: 100%;
+}
+
+#info-box {
+  padding: 2rem;
+  text-align: center;
+}
+
+#info-box-heading {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+#info-box-text-1 {
+  font-size: 1.15rem;
+}
+
+#info-box-text-2 {
+  font-size: 1.15rem;
+}
+
+#info-text-link {
+}
+
+#skills-box {
+  grid-area: experience;
+  justify-content: center;
+  align-items: center;
+}
+
+#skills-heading {
+  font-size: 1.75rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+#skills-chart {
+}
+
+.row-box {
+  padding: 0.5rem 0;
+}
+
+.row-heading-box {
+  width: 8rem;
+}
+
+.row-heading {
+}
+
+.circle-box {
+}
+
+.circle {
+  padding: 0.25rem;
+}
+
+.blue {
+  color: blue;
+}
+
+.green {
+  color: green;
+}
+
+.yellow {
+  color: yellow;
+}
+
+.orange {
+  color: orangered;
+}
+
+.red {
+  color: red;
+}
+
+.op {
+  opacity: 0.2;
+}
+
+.level-box {
+  padding-left: 1rem;
+}
+
+.level {
+}
+
+/* Portfolio section */
+
+#portfolio {
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(8, auto);
+  grid-template-areas: "heading" "svaldi" "faqs-accordian" "time-tracker" "interactive-rating" "intro-component" "ping-coming-soon" "bankist" "mapty";
+  justify-content: center;
+  align-items: center;
+  background: url(../images/concrete.jpg) repeat center;
+  background-color: black;
+  text-align: center;
+}
+
+#portfolio-heading {
+  grid-area: heading;
+  width: 100%;
+  font-size: 2.5rem;
+  color: white;
+  margin: 2rem 0;
+}
+
+#svaldi {
+  grid-area: svaldi;
+}
+
+#faqs-accordian {
+  grid-area: faqs-accordian;
+}
+
+#time-tracker {
+  grid-area: time-tracker;
+}
+
+#interactive-rating {
+  grid-area: interactive-rating;
+}
+
+#intro-component {
+  grid-area: intro-component;
+}
+
+#ping-coming-soon {
+  grid-area: ping-coming-soon;
+}
+
+#bankist {
+  grid-area: bankist;
+}
+
+#mapty {
+  grid-area: mapty;
+}
+
+.project-link {
+  color: white;
+  text-decoration: none;
+  margin: 0 auto 2rem auto;
+}
+
+.project-card {
+  margin: 0 auto 2rem auto;
+  padding: 0.5rem 1rem;
+}
+
+.project-img {
+  max-width: 70vw;
+  max-height: 70vh;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.project-heading {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.project-text {
+  font-size: 1.25rem;
+}
+
+/* Contact section */
 
 #contact {
 }
@@ -391,6 +649,55 @@
     90% {
     }
   }
+
+  #about {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "heading heading" "collection collection" "avatar experience";
+    padding: 3rem 1rem;
+  }
+
+  #skill-icons-collection {
+    grid-template-columns: repeat(1, 25%);
+    grid-template-rows: 100%;
+    grid-template-areas: "fast responsive intuitive dynamic";
+  }
+
+  #avatar-box {
+    max-width: 50%;
+    max-height: 50vh;
+    margin-bottom: 0;
+  }
+
+  #info-box {
+    padding: 1rem 2rem;
+  }
+
+  .row-box {
+    padding: 0.75rem 0;
+  }
+
+  #portfolio {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "heading heading" "svaldi faqs-accordian" "time-tracker interactive-rating" "intro-component ping-coming-soon" "bankist mapty";
+    gap: 2rem;
+    justify-items: start;
+    align-items: start;
+  }
+
+  .project-link {
+    margin: 0 auto;
+  }
+
+  .project-card {
+    margin: 0 auto;
+  }
+
+  .project-img {
+    max-width: 30vw;
+    max-height: 70vh;
+  }
 }
 
 /* Changes settings at 1024px to 1500px screen size */
@@ -408,6 +715,55 @@
     90% {
     }
   }
+
+  #about {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "heading heading" "collection collection" "avatar experience";
+    padding: 3rem 1rem;
+  }
+
+  #skill-icons-collection {
+    grid-template-columns: repeat(1, 25%);
+    grid-template-rows: 100%;
+    grid-template-areas: "fast responsive intuitive dynamic";
+  }
+
+  #avatar-box {
+    max-width: 50%;
+    max-height: 50vh;
+    margin-bottom: 0;
+  }
+
+  #info-box {
+    padding: 1rem 2rem;
+  }
+
+  .row-box {
+    padding: 0.75rem 0;
+  }
+
+  #portfolio {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "heading heading" "svaldi faqs-accordian" "time-tracker interactive-rating" "intro-component ping-coming-soon" "bankist mapty";
+    gap: 2rem;
+    justify-items: start;
+    align-items: start;
+  }
+
+  .project-link {
+    margin: 0 auto;
+  }
+
+  .project-card {
+    margin: 0 auto;
+  }
+
+  .project-img {
+    max-width: 30vw;
+    max-height: 70vh;
+  }
 }
 
 /* Changes settings at 1501px screen size */
@@ -424,5 +780,57 @@
     }
     90% {
     }
+  }
+
+  #about {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "heading heading" "collection collection" "avatar experience";
+    padding: 3rem 1rem;
+  }
+
+  #skill-icons-collection {
+    grid-template-columns: repeat(1, 25%);
+    grid-template-rows: 100%;
+    grid-template-areas: "fast responsive intuitive dynamic";
+  }
+
+  #avatar-box {
+    max-width: 50%;
+    max-height: 50vh;
+    margin-bottom: 0;
+  }
+
+  #info-box {
+    padding: 1rem 2rem;
+  }
+
+  .row-box {
+    padding: 0.75rem 0;
+  }
+
+  #portfolio {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+      "heading heading heading heading heading heading"
+      "svaldi svaldi faqs-accordian faqs-accordian time-tracker time-tracker"
+      "interactive-rating interactive-rating intro-component intro-component  ping-coming-soon ping-coming-soon" "bankist bankist bankist mapty mapty mapty";
+    gap: 2rem;
+    justify-items: start;
+    align-items: start;
+  }
+
+  .project-link {
+    margin: 0 auto;
+  }
+
+  .project-card {
+    margin: 0 auto;
+  }
+
+  .project-img {
+    max-width: 30vw;
+    max-height: 70vh;
   }
 }
